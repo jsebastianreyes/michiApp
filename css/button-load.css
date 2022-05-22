@@ -1,0 +1,14 @@
+.buttonLoad{
+  margin: auto;
+  margin-block: 3rem;
+  display: block;
+  background: transparent;
+  border: 2px solid #ccc;
+  padding-block: .7rem;
+  padding-inline: 2rem;
+  border-radius: 1.2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+}
+

@@ -1,0 +1,40 @@
+.formUpload{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.containerInputUpload{
+  /* border: 1px solid red; */
+  overflow: hidden;
+  position: relative;
+}
+
+
+label.containerInputUpload-INPUT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+label.containerInputUpload-INPUT img{
+  max-inline-size: 12rem;
+}
+
+
+
+.formUpload input[type="file"]{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  block-size: 100%;
+  inset-block-start: 0;
+}
+
+.buttonUpload{
+  background: transparent;
+}

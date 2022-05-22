@@ -1,0 +1,36 @@
+.buttonImg{
+  position: absolute;
+  inset-block-end: .5rem;
+  inset-inline-end: .5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  outline: none;
+}
+
+.buttonImg.buttonFavorite .icon-heart{
+  color: white;
+  font-size: 1.3rem;
+  filter: drop-shadow(1px 1px 1px #000);
+}
+
+.buttonImg.buttonRemove{
+  transform: rotate(45deg);
+}
+
+.buttonImg.buttonRemove .icon-plus{
+  color: white;
+  font-size: 1.1rem;
+  filter: drop-shadow(1px 1px 1px #000);
+}
+.buttonImg.buttonFavorite:active{
+  transform: scale(.9);
+}
+.buttonImg.buttonFavorite:active .icon-heart{
+  color: red;
+}
+
+.buttonImg.buttonFavorite.is-fav .icon-heart{
+  color: red;
+}

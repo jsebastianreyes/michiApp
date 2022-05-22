@@ -1,0 +1,1 @@
+export const sizesMasonry = ['masonry-small', 'masonry-medium','masonry-large']

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>😸 Pinterest By Michis </title>
+
+  <link rel="stylesheet" href="./css/index.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+       <div class="headerContent">
+        <a href="./" aria-current="page">
+          <!--Aria-current: ayuda a identificar el actual item-->
+          <img src="./img/logo-gatico.png" class="logo-image" alt="Logo de Michis" height="60" width="60">
+        </a>
+        <nav class="menu" aria-label="Principal">
+          <ul class="menu-list">
+            <li class="menuItem">
+              <a href="./" class="link" aria-selected="true" id="tab-0">
+                <i class="icon-home" aria-hidden="true"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="./" class="link" id="tab-1">
+                <i class="icon-home" aria-hidden="true"></i>
+                <span>Favoritas</span>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="./" class="link" id="tab-2">
+                <i class="icon-home" aria-hidden="true"></i>
+                <span>Subir Imagen</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+       </div>
+
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="tab-0" class="tabPanel">
+      <div class="wrapper">
+        <div class="masonry" id="general">
+        </div>
+        <button class="buttonLoad"> Ver más </button>
+      </div>
+
+    </section>
+    <section aria-labelledby="tab-1" class="tabPanel" hidden>
+      <div class="wrapper">
+        <h2 class="title" id="msg">No tienes michis en favoritos</h2>
+        <div class="masonry" id="favoritos">
+        </div>
+      </div>
+
+    </section>
+    <section aria-labelledby="tab-2" class="tabPanel" hidden>
+      <div class="wrapper">
+        <div>
+          <h2 class="title">Subir imagen de tu michi</h2>
+          <form id="formUpload" class="formUpload">
+            <div class="containerInputUpload">
+              <input class="containerInputUpload-INPUT" type="file" name="file" id="file">
+              <label for="file" class="containerInputUpload-INPUT" >
+                <img src="./img/upload.png" alt="">
+                <span class="iborrainputfile">Seleccionar archivo</span>
+              </label>
+            </div>
+            <input type="submit"  class="buttonLoad" value="Subir Michi">
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
